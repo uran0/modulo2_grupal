@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Estadísticas - Fénix</title>
+  <link rel="stylesheet" href="./css/index.css">
+  <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.11.5/css/jquery.dataTables.css">
+</head>
+<body>
+  <header>
+    <div class="titulo">
+      <h1>
+        Fénix Studio
+      </h1>
+    </div>
+    <nav class="menu">
+      <div class="menu-icon">&#9776;</div>
+      <ul class="menu-lista">
+        <li><a href="./nosotros.html">Nosotros</a></li>
+        <li><a href="./tienda.html">Tienda</a></li>
+        <li><a href="./comprar.html">Cómo Comprar</a></li>
+        <li><a href="./marcas.html">Marcas</a></li>
+        <li><a href="./pagos.html">Pagos y Transferencias</a></li>
+        <li><a href="./contacto.html">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+  
+  <main class="container">
+    <div class="contenido-base">
+      <h2>Estadísticas</h2>
+      <table id="tabla-estadisticas" class="display">
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Producto</th>
+            <th>Categoría</th>
+            <th>Ventas</th>
+            <th>Valoración</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>Cámara Canon EOS</td>
+            <td>Fotografía</td>
+            <td>150</td>
+            <td>4.5</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>Lente Sony E-Mount</td>
+            <td>Fotografía</td>
+            <td>120</td>
+            <td>4.7</td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>Impresora Kodak</td>
+            <td>Impresión</td>
+            <td>80</td>
+            <td>4.2</td>
+          </tr>
+
+        </tbody>
+      </table>
+    </div>
+  </main>
+
+
+
+  <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.js"></script>
+  <script>
+    $(document).ready( function () {
+      $('#tabla-estadisticas').DataTable();
+    } );
+  </script>
+
+</body>
+</html>
