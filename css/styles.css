@@ -1,0 +1,383 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #0C2D57;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 24px 14px;
+    align-items: center;
+}
+
+.titulo h1 {
+    color: #efecec96;
+    font-size: 30pt;
+    letter-spacing: 2px;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+}
+
+.menu-icon {
+    display: none;
+}
+
+.menu-lista {
+    display: flex;
+    list-style-type: none;
+}
+
+.menu-lista li:not(:last-of-type) {
+    margin-right: 12px;
+}
+
+.menu-lista li a {
+    background-color: #FC6736;
+    color: #EFECEC;
+    text-decoration: none;
+    font-size: 12pt;
+    padding: 10px;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: background-color .3s;
+}
+
+.menu-lista li a:hover {
+    background-color: #FFB0B0;
+}
+
+.container {
+    background-color: #EFECEC;
+    display: grid;
+}
+
+.hero-fenix {
+    background-image: url('../assets/img/bg.jpg');
+    background-position: center;
+    background-size: cover;
+    min-height: 100%;
+}
+
+.hero-fenix .texto {
+    padding: 120px 20px;
+    background-color: rgba(0, 0, 0, 0.297);
+}
+
+.hero-fenix .texto .titulo h2 {
+    color: #EFECEC;
+    font-size: 70pt;
+}
+
+.contenido-ventajas {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    background-color: #EFECEC;
+    color: #0C2D57;
+}
+
+.contenido-ventajas .titulo h3 {
+    font-size: 24pt;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.contenido-ventajas p {
+    font-size: 14pt;
+    padding: 20px;
+}
+
+.contenido-base {
+    width: 100%;
+    background-color: #EFECEC;
+    margin: auto;
+    color: #0C2D57;
+}
+
+.contenido-base ul{
+    list-style-type: none;
+}
+
+.contenido-base ul li{
+    padding: 1rem;
+    font-size: 18pt;
+    font-weight: bold;
+}
+
+.contenido-base ul p{
+    width: 60%;
+    text-align: justify;
+}
+
+.marcas {
+    padding: 20px 0;
+}
+
+.marcas .titulo {
+    text-align: center;
+}
+
+.marcas .titulo h3 {
+    font-size: 24pt;
+}
+
+.marcas .titulo p {
+    font-size: 14pt;
+}
+
+.contenedor-marcas {
+    margin-top: 4em;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: .5rem;
+}
+
+.contenedor-marcas .marca img {
+    width: 100%;
+    height: 70%;
+    border-radius: 20px;
+    filter: grayscale(50);
+    padding: 18px;
+    transition: .3s;
+    border-radius: 30px;
+}
+
+.contenedor-marcas .marca img:hover {
+    filter: grayscale(0);
+    transform: scale(1.2);
+}
+
+.contacto {
+    text-align: center;
+}
+
+.sociales {
+    padding: 18px 0;
+}
+
+.sociales .titulo {
+    text-align: center;
+}
+
+.sociales .titulo h3 {
+    font-size: 24pt;
+}
+
+.sociales .titulo p {
+    font-size: 14pt;
+}
+
+.contenedor-sociales {
+    margin-top: 1.5em;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: .02rem;
+}
+
+.contenedor-sociales .social img {
+    width: 100px;
+    height: 95px;
+    transition: .3s;
+    border-radius: 40px;
+}
+
+.contenedor-sociales .social img:hover {
+    filter: grayscale(50);
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    background-color: #0c2c57ed;
+}
+
+footer .superior {
+    display: flex;
+    flex-direction: row;
+    padding: 14px 28px;
+    width: 100%;
+}
+
+footer .superior .columna {
+    padding: 14px 8px;
+    width: 100%;
+}
+
+footer .superior .columna iframe {
+    width: 100%;
+    height: 200px;
+    border-radius: 10px;
+}
+
+footer .superior .columna.portafolio {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+footer .superior .columna.portafolio form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+footer .superior .columna.portafolio form .input {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+footer .superior .columna.portafolio form .input label {
+    margin: 1.5px 0;
+    color: #EFECEC;
+    font-weight: bold;
+}
+
+footer .superior .columna.portafolio form .input input {
+    padding: 10px 8px;
+    font-size: 10pt;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+}
+
+footer .superior .columna.portafolio form .input button {
+    margin: 8px 0;
+}
+
+.testimonio {
+    background-color: #efecece6;
+    padding: 14px 16px;
+    border-radius: 12px;
+    margin-bottom: 12px;
+    text-align: justify;
+    color: #0c2c57f8;
+    transition: .3s;
+}
+
+.testimonio h4 {
+    margin-bottom: 4px;
+    font-size: 12pt;
+}
+
+.testimonio:hover {
+    transform: scale(1.2);
+}
+
+.btn {
+    text-align: center;
+    padding: 12px 8px;
+    background-color: #EFECEC;
+    color: black;
+    font-size: 14pt;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: .3s;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+.btn.btn-primario {
+    background-color: #FC6736;
+    color: #EFECEC;
+}
+
+.btn.btn-primario:hover {
+    background-color: #FFB0B0;
+}
+
+.btn.btn-secundario {
+    background-color: #FFB0B0;
+    color: #EFECEC;
+}
+
+.btn.btn-secundario:hover {
+    background-color: #FC6736;
+}
+
+@media screen and (max-width: 1024px) {
+    .menu-lista {
+        display: none;
+    }
+
+    .menu-lista.open {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .menu-icon {
+        display: block;
+        color: #efecec96;
+    font-size: 24px;
+    }
+
+    .menu-icon::after {
+        content: '\2630';
+    }
+
+    .menu-lista.open + .menu-icon::after {
+        color: #FC6736;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .menu-lista {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .menu-lista li {
+        margin: 12px 0;
+    }
+
+    .container {
+        width: 100%;
+    }
+
+    .contenido {
+        font-display: flex;
+        flex-direction: column;
+    }
+
+    .hero-fenix .texto {
+        padding: 60px 20px;
+    }
+
+    .hero-fenix .texto .titulo h2 {
+        font-size: 50pt;
+    }
+
+    .hero-fenix .texto .subtitulo p {
+        font-size: 18pt;
+    }
+
+    .marcas .titulo h3 {
+        font-size: 18pt;
+    }
+
+    .marcas .titulo p {
+        font-size: 12pt;
+    }
+
+    .contenedor-marcas,
+    .contenedor-sociales {
+        grid-template-columns: 1fr;
+    }
+
+    .contenedor-marcas .marca,
+    .contenedor-sociales .social {
+        margin-bottom: 20px;
+    }
+}
